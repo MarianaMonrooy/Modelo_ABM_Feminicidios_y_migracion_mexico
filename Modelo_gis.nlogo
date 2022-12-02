@@ -146,20 +146,21 @@ end
 
 
 ;;asignar regiones con condición datos gis
+;;sprout-breeds es el porcentaje de mujeres migrantes respecto a la población total de mujeres por región
 to asignar-regiones
-  ask patches [if is-region = 1 [ sprout-breed4s 2 [ set heading random 360
+  ask patches [if is-region = 1 [ sprout-breed4s 18 [ set heading random 360
     set current-region region_centro ]]]
 
-  ask patches [if is-region = 2 [ sprout-breed2s 2 [ set heading random 360
+  ask patches [if is-region = 2 [ sprout-breed2s 7 [ set heading random 360
     set current-region region_norteoccidente ]]]
 
-  ask patches [if is-region = 3  [ sprout-breed3s 2 [ set heading random 360
+  ask patches [if is-region = 3  [ sprout-breed3s 14 [ set heading random 360
     set current-region region_centronorte ]]]
 
-  ask patches [if is-region = 4 [sprout-breed1s 2 [ set heading random 360
+  ask patches [if is-region = 4 [sprout-breed1s 38 [ set heading random 360
     set current-region region_norte ]]]
 
-  ask patches [if is-region = 5 [ sprout-breed5s 2 [ set heading random 360
+  ask patches [if is-region = 5 [ sprout-breed5s 23 [ set heading random 360
     set current-region region_sur ]]]
 
  ;; ask patches [if is-norte = 1 [ask n-of agentset-size region_norte [ sprout-breed4s 1 [ set heading random 360
